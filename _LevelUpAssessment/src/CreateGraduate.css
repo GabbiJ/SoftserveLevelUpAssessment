@@ -1,0 +1,36 @@
+.heading {
+    font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  size: 5000px;
+  font-style: normal;
+  color: #E3F0D3;
+}
+
+.label {
+    color: #F1A51F;
+}
+
+.create-graduate-heading {
+    font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  size: 5000px;
+  font-style: normal;
+  color: #E3F0D3;
+  margin-left: 40px;
+}
+
+.table {
+    border-spacing: 100px;
+    padding: 100px;
+    margin-left: 40px;
+    margin-right: 40px;
+    
+}
+
+.body {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 50px;
+}

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\LevelUpAssessmentBackend2.props" />
+</Project>

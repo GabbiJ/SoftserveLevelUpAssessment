@@ -1,0 +1,6 @@
+@LevelUpAssessmentBackend2_HostAddress = http://localhost:5188
+
+GET {{LevelUpAssessmentBackend2_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
