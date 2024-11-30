@@ -16,7 +16,7 @@ namespace LevelUpAssessmentBackend2.Models
         public string? DateEdited { get; set; }
         public bool IsDeleted { get; set; }
 
-        public Graduate(string firstName, string lastName, string emailAddress, string dateOfBirth, int age, string dateCreated)
+        public Graduate(string firstName, string lastName, string emailAddress, string dateOfBirth)
         {
             Guid graduateIdGuid = Guid.NewGuid();
             GraduateId = graduateIdGuid.ToString();

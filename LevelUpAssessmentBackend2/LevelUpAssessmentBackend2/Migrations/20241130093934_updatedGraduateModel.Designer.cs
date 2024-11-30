@@ -3,6 +3,7 @@ using LevelUpAssessmentBackend2.LevelUpAssessmentBackend;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LevelUpAssessmentBackend2.Migrations
 {
     [DbContext(typeof(DbGradContext))]
-    partial class DbGradContextModelSnapshot : ModelSnapshot
+    [Migration("20241130093934_updatedGraduateModel")]
+    partial class updatedGraduateModel
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
