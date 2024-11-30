@@ -25,7 +25,9 @@ namespace LevelUpAssessmentBackend2.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Graduate>>> GetGraduates()
         {
-            return await _context.Graduates.ToListAsync();
+            return await _context.Graduates
+                .Where(grad => (grad.IsDeleted == false)) 
+                .ToListAsync();
         }
 
         // GET: api/Graduates/5
@@ -39,7 +41,14 @@ namespace LevelUpAssessmentBackend2.Controllers
                 return NotFound();
             }
 
-            return graduate;
+            else if (graduate.IsDeleted == false)
+            {
+                return graduate;
+            }
+            else
+            {
+                return NotFound();
+            }
         }
 
         // PUT: api/Graduates/5
@@ -51,6 +60,8 @@ namespace LevelUpAssessmentBackend2.Controllers
             {
                 return BadRequest();
             }
+
+            graduate.DateEdited = DateTime.Now.ToString("dd/MM/yyyy");
 
             _context.Entry(graduate).State = EntityState.Modified;
 
@@ -100,16 +111,32 @@ namespace LevelUpAssessmentBackend2.Controllers
 
         // DELETE: api/Graduates/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteGraduate(string id)
+        public async Task<IActionResult> DeleteGraduate(string id, Graduate graduate)
         {
-            var graduate = await _context.Graduates.FindAsync(id);
-            if (graduate == null)
+            if (id != graduate.GraduateId)
             {
-                return NotFound();
+                return BadRequest();
             }
 
-            _context.Graduates.Remove(graduate);
-            await _context.SaveChangesAsync();
+            graduate.IsDeleted = true;
+
+            _context.Entry(graduate).State = EntityState.Modified;
+
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!GraduateExists(id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
 
             return NoContent();
         }

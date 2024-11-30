@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "M5Ki9oWVYHNus6BMV5sxdeNGsOqidmEl8XOlWXKbRmU2A4V+WSdTkz8EkbwQ25UnpT5r4xCH6zMVmgQ6WuoKRA==",
+  "dgSpecHash": "izRq4bqATquO7AWNwQoW7lNUCEvvGelA/3qujIbUWhDWxHWEn6m+ZTDLnbAbhHjpyMfW7FRAU5fkZscJCaRZ3A==",
   "success": true,
   "projectFilePath": "C:\\Users\\USER-PC\\Desktop\\Gabriella Janssen LevelUpAssessment\\LevelUpAssessmentBackend2\\LevelUpAssessmentBackend2\\LevelUpAssessmentBackend2.csproj",
   "expectedPackageFiles": [
@@ -93,7 +93,7 @@
     "C:\\Users\\USER-PC\\.nuget\\packages\\microsoft.entityframeworkcore.design\\9.0.0\\microsoft.entityframeworkcore.design.9.0.0.nupkg.sha512",
     "C:\\Users\\USER-PC\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\9.0.0\\microsoft.entityframeworkcore.relational.9.0.0.nupkg.sha512",
     "C:\\Users\\USER-PC\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\9.0.0\\microsoft.entityframeworkcore.sqlserver.9.0.0.nupkg.sha512",
-    "C:\\Users\\USER-PC\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\8.0.11\\microsoft.entityframeworkcore.tools.8.0.11.nupkg.sha512",
+    "C:\\Users\\USER-PC\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\9.0.0\\microsoft.entityframeworkcore.tools.9.0.0.nupkg.sha512",
     "C:\\Users\\USER-PC\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\USER-PC\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\9.0.0\\microsoft.extensions.caching.abstractions.9.0.0.nupkg.sha512",
     "C:\\Users\\USER-PC\\.nuget\\packages\\microsoft.extensions.caching.memory\\9.0.0\\microsoft.extensions.caching.memory.9.0.0.nupkg.sha512",

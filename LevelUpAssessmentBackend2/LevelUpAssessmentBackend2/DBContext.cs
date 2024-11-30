@@ -13,7 +13,7 @@ namespace LevelUpAssessmentBackend2
 
             protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
             {
-                optionsBuilder.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=GradDB;Trusted_Connection=True;");
+                optionsBuilder.UseSqlServer("Server=(LocalDB)\\MSSQLLocalDB;Database=GradDB;Trusted_Connection=True; TrustServerCertificate=True;");
             }
         }
     }

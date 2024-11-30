@@ -586,3 +586,4 @@ C:\Users\USER-PC\Desktop\Gabriella Janssen LevelUpAssessment\LevelUpAssessmentBa
 C:\Users\USER-PC\Desktop\Gabriella Janssen LevelUpAssessment\LevelUpAssessmentBackend2\LevelUpAssessmentBackend2\obj\Debug\net8.0\LevelUpAssessmentBackend2.pdb
 C:\Users\USER-PC\Desktop\Gabriella Janssen LevelUpAssessment\LevelUpAssessmentBackend2\LevelUpAssessmentBackend2\obj\Debug\net8.0\LevelUpAssessmentBackend2.genruntimeconfig.cache
 C:\Users\USER-PC\Desktop\Gabriella Janssen LevelUpAssessment\LevelUpAssessmentBackend2\LevelUpAssessmentBackend2\obj\Debug\net8.0\ref\LevelUpAssessmentBackend2.dll
+C:\Users\USER-PC\Desktop\Gabriella Janssen LevelUpAssessment\LevelUpAssessmentBackend2\LevelUpAssessmentBackend2\obj\Debug\net8.0\LevelUpAssessmentBackend2.sourcelink.json
