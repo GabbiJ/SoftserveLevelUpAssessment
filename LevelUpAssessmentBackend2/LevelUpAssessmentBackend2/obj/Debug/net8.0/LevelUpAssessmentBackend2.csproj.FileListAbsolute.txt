@@ -572,6 +572,7 @@ C:\Users\USER-PC\Desktop\Gabriella Janssen LevelUpAssessment\LevelUpAssessmentBa
 C:\Users\USER-PC\Desktop\Gabriella Janssen LevelUpAssessment\LevelUpAssessmentBackend2\LevelUpAssessmentBackend2\obj\Debug\net8.0\LevelUpAssessmentBackend2.csproj.CoreCompileInputs.cache
 C:\Users\USER-PC\Desktop\Gabriella Janssen LevelUpAssessment\LevelUpAssessmentBackend2\LevelUpAssessmentBackend2\obj\Debug\net8.0\LevelUpAssessmentBackend2.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\USER-PC\Desktop\Gabriella Janssen LevelUpAssessment\LevelUpAssessmentBackend2\LevelUpAssessmentBackend2\obj\Debug\net8.0\LevelUpAssessmentBackend2.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\USER-PC\Desktop\Gabriella Janssen LevelUpAssessment\LevelUpAssessmentBackend2\LevelUpAssessmentBackend2\obj\Debug\net8.0\LevelUpAssessmentBackend2.sourcelink.json
 C:\Users\USER-PC\Desktop\Gabriella Janssen LevelUpAssessment\LevelUpAssessmentBackend2\LevelUpAssessmentBackend2\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\USER-PC\Desktop\Gabriella Janssen LevelUpAssessment\LevelUpAssessmentBackend2\LevelUpAssessmentBackend2\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\USER-PC\Desktop\Gabriella Janssen LevelUpAssessment\LevelUpAssessmentBackend2\LevelUpAssessmentBackend2\obj\Debug\net8.0\staticwebassets\msbuild.LevelUpAssessmentBackend2.Microsoft.AspNetCore.StaticWebAssets.props
@@ -586,4 +587,3 @@ C:\Users\USER-PC\Desktop\Gabriella Janssen LevelUpAssessment\LevelUpAssessmentBa
 C:\Users\USER-PC\Desktop\Gabriella Janssen LevelUpAssessment\LevelUpAssessmentBackend2\LevelUpAssessmentBackend2\obj\Debug\net8.0\LevelUpAssessmentBackend2.pdb
 C:\Users\USER-PC\Desktop\Gabriella Janssen LevelUpAssessment\LevelUpAssessmentBackend2\LevelUpAssessmentBackend2\obj\Debug\net8.0\LevelUpAssessmentBackend2.genruntimeconfig.cache
 C:\Users\USER-PC\Desktop\Gabriella Janssen LevelUpAssessment\LevelUpAssessmentBackend2\LevelUpAssessmentBackend2\obj\Debug\net8.0\ref\LevelUpAssessmentBackend2.dll
-C:\Users\USER-PC\Desktop\Gabriella Janssen LevelUpAssessment\LevelUpAssessmentBackend2\LevelUpAssessmentBackend2\obj\Debug\net8.0\LevelUpAssessmentBackend2.sourcelink.json

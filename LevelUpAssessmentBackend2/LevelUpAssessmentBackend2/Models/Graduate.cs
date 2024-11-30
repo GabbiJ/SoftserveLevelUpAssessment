@@ -40,24 +40,17 @@ namespace LevelUpAssessmentBackend2.Models
             {
                 throw new Exception("Date of birth invalid");
             }
-            
 
-            Age = (DateTime.Today.Year - DateTime.Parse(dateOfBirth).Year);
+            //debugging logs
+            Console.WriteLine($"Today year: {DateTime.Today.Year} Birth year: {DateTime.ParseExact(dateOfBirth, "dd/MM/yyyy", CultureInfo.InvariantCulture).Year}");
+
+            Age = (DateTime.Today.Year - DateTime.ParseExact(dateOfBirth, "dd/MM/yyyy", CultureInfo.InvariantCulture).Year);
             
             DateCreated = DateTime.Now.ToString("dd/MM/yyyy");
             IsDeleted = false;
         }
 
-        
-
-        public Graduate()
-        {
-            Guid graduateIdGuid = Guid.NewGuid();
-            GraduateId = graduateIdGuid.ToString();
-
-            DateCreated = DateTime.Now.ToString("dd/MM/yyyy");
-            IsDeleted = false;
-        }
+      
 
         //uses regex to validate email
         private bool isValidEmail(string emailAddress)
@@ -105,7 +98,7 @@ namespace LevelUpAssessmentBackend2.Models
         private bool isValidDOB(string dateOfBirth)
         {
             DateTime currentDate = DateTime.Now;
-            DateTime dateOfBirthDate = DateTime.Parse(dateOfBirth);
+            DateTime dateOfBirthDate = DateTime.ParseExact(dateOfBirth, "dd/MM/yyyy", CultureInfo.InvariantCulture); ;
 
             if (dateOfBirthDate < currentDate) 
             {
