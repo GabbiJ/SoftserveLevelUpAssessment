@@ -4,7 +4,8 @@ import '../App.css';
 import '../index.css';
 import { Link, NavLink } from "react-router-dom";
 
-const Navbar = () => {
+const 
+Navbar = () => {
     return (
         <nav className='sticky top-0 left-0 right-0 bg-black md:px-12 px-4 micro-5 md:text-3xl text-lg'>
             <div className="border-b border-white flex md:justify-center py-4 justify-between">
