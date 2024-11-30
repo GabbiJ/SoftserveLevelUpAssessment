@@ -41,9 +41,6 @@ namespace LevelUpAssessmentBackend2.Models
                 throw new Exception("Date of birth invalid");
             }
 
-            //debugging logs
-            Console.WriteLine($"Today year: {DateTime.Today.Year} Birth year: {DateTime.ParseExact(dateOfBirth, "dd/MM/yyyy", CultureInfo.InvariantCulture).Year}");
-
             Age = (DateTime.Today.Year - DateTime.ParseExact(dateOfBirth, "dd/MM/yyyy", CultureInfo.InvariantCulture).Year);
             
             DateCreated = DateTime.Now.ToString("dd/MM/yyyy");

@@ -56,8 +56,10 @@ namespace LevelUpAssessmentBackend2.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> PutGraduate(string id, Graduate graduate)
         {
+
             if (id != graduate.GraduateId)
             {
+                await Console.Out.WriteLineAsync($"Mismatching IDs: id:{id}  gradId:{graduate.GraduateId}");
                 return BadRequest();
             }
 
