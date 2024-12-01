@@ -2,7 +2,7 @@ h1 {
     font-family: "Orbitron", sans-serif;
   font-optical-sizing: auto;
   font-weight: 800;
-  font-size: 75px;
+  font-size: 70px;
   font-style: normal;
   color: #E3F0D3;
 }
@@ -115,4 +115,35 @@ p {
   font-family: "Orbitron", sans-serif;
   font-size: 18px;
   color: var(--white);
+}
+
+.grad-name-heading {
+  background-color: var(--white);
+  border-radius: 10px;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  padding: 8px 10px;
+  color: var(--black);
+  font-size: 20px;
+}
+
+.table-grad-details {
+  border-collapse: collapse ;
+  width: 100%;
+}
+
+.table-grad-details td {
+  padding: 25px;
+}
+
+.grad-info-label {
+  color: var(--white);
+  font-family: "Orbitron", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  display: block;
+  width: 100%;
+  padding-left: 25px;
 }

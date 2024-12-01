@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../components/navbar";
+import { useNavigate } from "react-router-dom";
 
 import '../App.css';
 import '../CreateGraduate.css';
@@ -7,6 +8,8 @@ import '../CreateGraduate.css';
 const ViewAllGraduates = () => {
 
     const [grad, setGrads] = useState([]);
+    const navigate = useNavigate();
+
 
     useEffect(() => {
         const fetchGrads = async () => {
@@ -14,6 +17,7 @@ const ViewAllGraduates = () => {
                 const response = await fetch("https://localhost:7041/api/Graduates");
                 if (!response.ok) {
                     alert('Failed to load graduates.');
+                    return;
                 }
 
                 setGrads(await response.json())
@@ -30,6 +34,36 @@ const ViewAllGraduates = () => {
     return (
         <div>
             <Navbar />
+
+            <div style={{ marginLeft: "20px" }}>
+                    <table>
+                        <tr>
+                            <p>LEVEL UP 2024</p>
+                        </tr>
+                        <tr>
+                            <td style={{ whiteSpace: "nowrap" }}>
+                                <h1 className="heading"> GRADUATE LIST </h1>
+                            </td>
+                            <td style={{ width: "100%", paddingLeft: "75px" }}>
+                                <table className="table-lines">
+                                    <tr style={{ backgroundColor: "var(--blue)" }}>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr style={{ backgroundColor: "var(--green)" }}>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr style={{ backgroundColor: "var(--orange)" }}>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr style={{ backgroundColor: "var(--red)" }}>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+
+                    </table>
+                </div>
 
             <section className="md:px-12 px-4 mt-6">
                 <table className="w-full border border-white md:rounded-t-xl rounded-t-lg overflow-hidden">
@@ -58,7 +92,7 @@ const ViewAllGraduates = () => {
                                 <td className="md:py-4 py-2 md:px-8 px-4"><strong>{grad.firstName}</strong> {grad.lastName}</td>
                                 <td className="md:py-4 py-2 md:px-8 px-4 md:block hidden">{grad.emailAddress}</td>
                                 <td className="md:py-4 py-2 md:px-8 px-4">
-                                    <button className="view-mode-button">
+                                    <button className="view-mode-button" onClick = {() => navigate(`/customer/${grad.graduateId}`)}>
                                         VIEW MODE
                                     </button>
                                     <button className="update-button">

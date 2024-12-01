@@ -81,9 +81,6 @@ const CreateGraduate = () => {
                         </tr>
 
                     </table>
-
-
-
                 </div>
                 <div className="body">
                     <form onSubmit={handleSubmit}>
