@@ -1,5 +1,5 @@
 h1 {
-    font-family: "Orbitron", sans-serif;
+  font-family: "Orbitron", sans-serif;
   font-optical-sizing: auto;
   font-weight: 800;
   font-size: 70px;
@@ -8,8 +8,8 @@ h1 {
 }
 
 label {
-    color: #F1A51F;
-    font-family: "Orbitron", sans-serif;
+  color: #F1A51F;
+  font-family: "Orbitron", sans-serif;
   font-optical-sizing: auto;
   font-weight: 800;
   font-style: normal;
@@ -18,7 +18,7 @@ label {
 
 .table-lines {
   width: 100%;
-  padding-left: 20px;  
+  padding-left: 20px;
 }
 
 .table-lines tr {
@@ -46,11 +46,11 @@ button {
 
 p {
   color: #E3F0D3;
-  font-size: 24px; 
+  font-size: 24px;
 }
 
 .create-graduate-heading {
-    font-family: "Orbitron", sans-serif;
+  font-family: "Orbitron", sans-serif;
   font-optical-sizing: auto;
   font-weight: 800;
   size: 5000px;
@@ -60,7 +60,7 @@ p {
 }
 
 .table-input {
- width: 100%;  
+  width: 100%;
 }
 
 .table-input td {
@@ -69,9 +69,9 @@ p {
 
 
 .body {
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-top: 50px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 50px;
 }
 
 .view-mode-button {
@@ -82,7 +82,7 @@ p {
   color: var(--orange);
   display: flex;
   align-items: center;
-  background-color: var(--black);
+  background-color: transparent;
   border: 2px solid var(--orange);
 }
 
@@ -94,7 +94,7 @@ p {
   color: var(--green);
   display: flex;
   align-items: center;
-  background-color: var(--black);
+  background-color: transparent;
   border: 2px solid var(--green);
 }
 
@@ -106,7 +106,7 @@ p {
   color: var(--red);
   display: flex;
   align-items: center;
-  background-color: var(--black);
+  background-color: transparent;
   border: 2px solid var(--red);
 }
 
@@ -130,7 +130,7 @@ p {
 }
 
 .table-grad-details {
-  border-collapse: collapse ;
+  border-collapse: collapse;
   width: 100%;
 }
 
@@ -146,4 +146,27 @@ p {
   display: block;
   width: 100%;
   padding-left: 25px;
+}
+
+.popup-delete {
+  
+  padding: 20px;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.popup-label {
+  font-family: "Orbitron", sans-serif;
+  display: block;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--black);
+}
+
+.popup-label2 {
+  font-family: "Micro 5", sans-serif;
+  color: var(--black);
 }
