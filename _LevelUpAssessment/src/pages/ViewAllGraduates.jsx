@@ -95,7 +95,7 @@ const ViewAllGraduates = () => {
                                     <button className="view-mode-button" onClick = {() => navigate(`/customer/${grad.graduateId}`)}>
                                         VIEW MODE
                                     </button>
-                                    <button className="update-button">
+                                    <button className="update-button" onClick = {() => navigate(`/update/${grad.graduateId}`)}>
                                         UPDATE
                                     </button>
                                     <button className="delete-button">
