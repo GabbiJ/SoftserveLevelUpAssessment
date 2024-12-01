@@ -1,9 +1,32 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "../components/navbar";
 
 import '../App.css';
+import '../CreateGraduate.css';
 
 const ViewAllGraduates = () => {
+
+    const [grad, setGrads] = useState([]);
+
+    useEffect(() => {
+        const fetchGrads = async () => {
+            try {
+                const response = await fetch("https://localhost:7041/api/Graduates");
+                if (!response.ok) {
+                    alert('Failed to load graduates.');
+                }
+
+                setGrads(await response.json())
+
+            } catch (error) {
+                console.error('Error occured:', error);
+            }
+        };
+
+        fetchGrads();
+    }, [])
+
+    // TODO : fix up UI
     return (
         <div>
             <Navbar />
@@ -14,7 +37,7 @@ const ViewAllGraduates = () => {
                         <tr>
                             <th className="md:rounded-s-xl rounded-s-lg md:py-2 py-1 md:px-8 px-4">
                                 <div className="relative flex justify-start items-center">
-                                    Full Name
+                                    Full Name/Names
                                     <img src="../assets/icons/rocket_black.webp" className="absolute right-0 h-2/3 md:block hidden" />
                                 </div>
                             </th>
@@ -29,14 +52,24 @@ const ViewAllGraduates = () => {
                             </th>
                         </tr>
                     </thead>
-                    <tbody className="text-white">
-                        {/* Sample row 
-                            <tr>
-                                <td className="md:py-4 py-2 md:px-8 px-4">Full Name</td>
-                                <td className="md:py-4 py-2 md:px-8 px-4 md:block hidden">Contact Details</td>
-                                <td className="md:py-4 py-2 md:px-8 px-4">Actions</td>
+                    <tbody className="graduate-list">
+                        {grad.map((grad) => (
+                            <tr key={grad.graduateId}>
+                                <td className="md:py-4 py-2 md:px-8 px-4"><strong>{grad.firstName}</strong> {grad.lastName}</td>
+                                <td className="md:py-4 py-2 md:px-8 px-4 md:block hidden">{grad.emailAddress}</td>
+                                <td className="md:py-4 py-2 md:px-8 px-4">
+                                    <button className="view-mode-button">
+                                        VIEW MODE
+                                    </button>
+                                    <button className="update-button">
+                                        UPDATE
+                                    </button>
+                                    <button className="delete-button">
+                                        DELETE
+                                    </button>
+                                </td>
                             </tr>
-                        */}
+                        ))} 
                     </tbody>
                 </table>
             </section>

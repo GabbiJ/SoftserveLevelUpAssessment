@@ -16,7 +16,6 @@ label {
 }
 
 
-
 .table-lines {
   width: 100%;
   padding-left: 20px;  
@@ -73,4 +72,47 @@ p {
     margin-left: 40px;
     margin-right: 40px;
     margin-top: 50px;
+}
+
+.view-mode-button {
+  border-radius: 50px;
+  padding: 1px 35px;
+  font-family: "Micro 5", sans-serif;
+  font-size: 25px;
+  color: var(--orange);
+  display: flex;
+  align-items: center;
+  background-color: var(--black);
+  border: 2px solid var(--orange);
+}
+
+.update-button {
+  border-radius: 50px;
+  padding: 1px 35px;
+  font-family: "Micro 5", sans-serif;
+  font-size: 25px;
+  color: var(--green);
+  display: flex;
+  align-items: center;
+  background-color: var(--black);
+  border: 2px solid var(--green);
+}
+
+.delete-button {
+  border-radius: 50px;
+  padding: 1px 35px;
+  font-family: "Micro 5", sans-serif;
+  font-size: 25px;
+  color: var(--red);
+  display: flex;
+  align-items: center;
+  background-color: var(--black);
+  border: 2px solid var(--red);
+}
+
+.graduate-list {
+  border: 1px solid var(--white);
+  font-family: "Orbitron", sans-serif;
+  font-size: 18px;
+  color: var(--white);
 }
