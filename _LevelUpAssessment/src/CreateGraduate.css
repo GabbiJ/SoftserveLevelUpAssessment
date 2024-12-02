@@ -111,10 +111,23 @@ p {
 }
 
 .graduate-list {
-  border: 1px solid var(--white);
+  border-bottom: 1px solid var(--white);
+  border-left: 1px solid var(--white);
+  border-right: 1px solid var(--white);
   font-family: "Orbitron", sans-serif;
   font-size: 18px;
   color: var(--white);
+  
+}
+
+.graduate-list td {
+  border-bottom: 1px solid var(--white);
+  padding: 30px;
+}
+
+.graduate-list tr:hover {
+  color: var(--black);
+  background-color: var(--white);
 }
 
 .grad-name-heading {

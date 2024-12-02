@@ -36,7 +36,7 @@ const ViewGraduate = () => {
     return (
         <div>
             <Navbar />
-            <div style={{ marginLeft: "20px" }}>
+            <div style={{ marginLeft: "40px" }}>
                 <table>
                     <tr>
                         <p>LEVEL UP 2024</p>

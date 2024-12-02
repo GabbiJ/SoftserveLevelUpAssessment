@@ -29,6 +29,9 @@ const Welcome = () => {
                     <button style={{ marginLeft: "70px" }} onClick={() => navigate(`/viewall`)}>
                         VIEW GRADUATES <img src="/assets/icons/rocket_white.webp" style={{ width: "45px", height: "25px", marginLeft: "20px" }} />
                     </button>
+                    <br/>
+                    <br/>
+                    <br/>
                     <table className="table-lines">
                                     <tr style={{ backgroundColor: "var(--blue)", border: "5px solid black" }}>
                                         <td>&nbsp;</td>

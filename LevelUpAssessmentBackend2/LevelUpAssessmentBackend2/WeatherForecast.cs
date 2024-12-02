@@ -1,5 +1,6 @@
 namespace LevelUpAssessmentBackend2
 {
+    // TODO : remove this default model
     public class WeatherForecast
     {
         public DateOnly Date { get; set; }

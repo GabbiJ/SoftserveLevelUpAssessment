@@ -53,7 +53,7 @@ const CreateGraduate = () => {
         <div>
             <Navbar />
             <div >
-                <div style={{ marginLeft: "20px" }}>
+                <div style={{ marginLeft: "80px" }}>
                     <table>
                         <tr>
                             <p>LEVEL UP 2024</p>

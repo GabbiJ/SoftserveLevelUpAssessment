@@ -37,7 +37,7 @@ const ViewAllGraduates = () => {
         <div>
             <Navbar />
 
-            <div style={{ marginLeft: "20px" }}>
+            <div style={{ marginLeft: "40px" }}>
                 <table>
                     <tr>
                         <p>LEVEL UP 2024</p>
@@ -68,8 +68,8 @@ const ViewAllGraduates = () => {
             </div>
 
             <section className="md:px-12 px-4 mt-6">
-                <table className="w-full border border-white md:rounded-t-xl rounded-t-lg overflow-hidden">
-                    <thead className="bg-white uppercase micro-5 text-3xl">
+                <table className="graduate-list" style={{width: "100%", border: "1px solid var(--white)}"}}>
+                    <thead style={{color: "var(--black)"}} className="bg-white uppercase micro-5 text-3xl">
                         <tr>
                             <th className="md:rounded-s-xl rounded-s-lg md:py-2 py-1 md:px-8 px-4">
                                 <div className="relative flex justify-start items-center">
@@ -88,12 +88,12 @@ const ViewAllGraduates = () => {
                             </th>
                         </tr>
                     </thead>
-                    <tbody className="graduate-list">
+                    <tbody >
                         {grad.map((grad) => (
                             <tr key={grad.graduateId}>
-                                <td className="md:py-4 py-2 md:px-8 px-4"><strong>{grad.firstName}</strong> {grad.lastName}</td>
-                                <td className="md:py-4 py-2 md:px-8 px-4 md:block hidden">{grad.emailAddress}</td>
-                                <td className="md:py-4 py-2 md:px-8 px-4">
+                                <td ><strong>{grad.firstName}</strong> {grad.lastName}</td>
+                                <td >{grad.emailAddress}</td>
+                                <td style={{display: "flex", justifyContent: "space-evenly"}}>
                                     <button className="view-mode-button" onClick={() => navigate(`/customer/${grad.graduateId}`)}>
                                         VIEW MODE
                                     </button>
